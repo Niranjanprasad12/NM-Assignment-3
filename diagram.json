@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Niranjan Prasad",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 111.45, "left": 15.92, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -92.5, "left": 90.54, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "uno:2", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "uno:3", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
